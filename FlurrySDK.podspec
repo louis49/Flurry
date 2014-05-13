@@ -11,12 +11,6 @@ Pod::Spec.new do |s|
   s.frameworks = 'SystemConfiguration', 'UIKit', 'Security', 'CoreGraphics'
   s.default_subspec = 'FlurrySDK'
 
-  s.subspec 'FlurrySDK' do |ss|
-    ss.source_files = 'Flurry/**/*.h'
-    ss.preserve_paths = 'Flurry/**/*.a'
-    ss.library = 'Flurry_5.0.0'
-    ss.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/FlurrySDK/Flurry"' }
-  end
 
   s.subspec 'FlurryAds' do |ss|
     ss.source_files = 'FlurryAds/**/*.h'
