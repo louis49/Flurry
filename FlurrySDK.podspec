@@ -15,6 +15,6 @@ Pod::Spec.new do |s|
     ss.source_files = 'Flurry/**/*.h'
     ss.preserve_paths = 'Flurry/**/*.a'
     ss.library = 'FlurrySDK'
-    ss.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/FlurrySDK"' }
+    ss.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/FlurrySDK/Flurry"' }
   end
 end
