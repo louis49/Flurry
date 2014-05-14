@@ -12,5 +12,6 @@ Pod::Spec.new do |s|
     s.library = 'FlurryAds'
     s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/FlurryAds"' }
     s.weak_frameworks = 'StoreKit' 
-    s.frameworks = 'SystemConfiguration', 'MediaPlayer', 'Security', 'AdSupport'  
+    s.frameworks = 'SystemConfiguration', 'MediaPlayer', 'Security', 'AdSupport'
+    s.dependency 'FlurrySDK/FlurrySDK'  
 end
