@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.description = 'FlurryAds for analytics tracking and reporting.'
   s.platform = :ios
   s.frameworks = 'SystemConfiguration', 'MediaPlayer', 'Security', 'AdSupport',
-  s.libraries = 'libz'
+  s.libraries = 'z'
 
   s.subspec 'FlurryAds' do |ss|
     ss.source_files = 'FlurryAds/**/*.h'
