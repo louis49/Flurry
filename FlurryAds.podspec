@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.platform = :ios
   s.frameworks = 'SystemConfiguration', 'MediaPlayer', 'Security', 'AdSupport'
   s.libraries = 'z'
+  s.compiler_flags = '-DOS_OBJECT_USE_OBJC=0'
 
   s.subspec 'FlurryAds' do |ss|
     ss.source_files = 'FlurryAds/**/*.h'
