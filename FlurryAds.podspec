@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.source   = { :git => 'https://github.com/louis49/Flurry.git', :tag => '5.0.0' }
   s.description = 'FlurryAds for analytics tracking and reporting.'
   s.platform = :ios
-  s.frameworks = 'SystemConfiguration', 'MediaPlayer', 'Security', 'AdSupport', 'libz.dylib'
+  s.frameworks = 'SystemConfiguration', 'MediaPlayer', 'Security', 'AdSupport', %w{libz.dylib}
 
   s.subspec 'FlurryAds' do |ss|
     ss.source_files = 'FlurryAds/**/*.h'
